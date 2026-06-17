@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JiroLink - Téléchargement</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:20px;
+    background:#16a34a;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:38px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(22,163,74,0.2);
+}
+
+.header h1{
+    color:#111827;
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#6b7280;
+    font-size:1rem;
+    line-height:1.6;
+    max-width:600px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#6b7280;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#15803d;
+}
+
+.version{
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#9ca3af;
+}
+
+.web-version{
+    margin-top:40px;
+    text-align:center;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.web-version p{
+    color:#6b7280;
+    margin-bottom:12px;
+}
+
+.web-version a{
+    color:#16a34a;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.web-version a:hover{
+    text-decoration:underline;
+}
+
+.footer{
+    margin-top:35px;
+    text-align:center;
+    color:#9ca3af;
+    font-size:14px;
+    line-height:1.8;
+}
+
+.footer strong{
+    color:#111827;
+}
+
+.features{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.feature{
+    background:white;
+    color:#4b5563;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:13px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+@media(max-width:768px){
+    .header h1{
+        font-size:2rem;
+    }
+
+    .logo{
+        width:80px;
+        height:80px;
+        font-size:32px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <!-- Remplace "J" par ton logo si disponible -->
+        <div class="logo">J</div>
+
+        <h1>JiroLink</h1>
+
+        <p>
+            Téléchargez l'application JiroLink pour accéder à la plateforme
+            de gestion et de suivi des compteurs électriques prépayés.
+        </p>
+
+        <div class="features">
+            <div class="feature">⚡ Gestion des compteurs</div>
+            <div class="feature">📊 Suivi de consommation</div>
+            <div class="feature">💳 Gestion des crédits</div>
+            <div class="feature">🔔 Notifications</div>
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💻</div>
+
+            <h2>Version Windows</h2>
+
+            <p>
+                Utilisez JiroLink sur votre ordinateur pour gérer et surveiller
+                facilement vos compteurs électriques prépayés.
+            </p>
+
+            <a href="JiroLink_Setup.exe" class="btn">
+                Télécharger pour Windows
+            </a>
+
+            <div class="version">
+                Version 1.0.0
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+
+            <h2>Version Android</h2>
+
+            <p>
+                Téléchargez l'application mobile JiroLink et accédez à vos
+                informations où que vous soyez.
+            </p>
+
+            <a href="JiroLink.apk" class="btn">
+                Télécharger l'APK Android
+            </a>
+
+            <div class="version">
+                Version 1.0.0
+            </div>
+        </div>
+
+    </div>
+
+    <div class="web-version">
+
+        <p>Vous ne souhaitez pas installer l'application ?</p>
+
+        <a href="https://app.jirolink.com" target="_blank">
+            🌐 Utiliser directement JiroLink dans Google Chrome
+        </a>
+
+    </div>
+
+    <div class="footer">
+        <strong>JiroLink</strong><br>
+        Solution de gestion des compteurs électriques prépayés<br>
+        Développé par Fortico<br>
+        © 2026 Tous droits réservés
+    </div>
+
+</div>
+
+</body>
+</html>
