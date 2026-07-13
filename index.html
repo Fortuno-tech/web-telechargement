@@ -184,35 +184,36 @@ body{
         font-size:32px;
     }
 }
+
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover; /* ou contain si tu veux voir tout le logo */
+    display:block;
+}
 </style>
 </head>
 <body>
-
 <div class="container">
-
     <div class="header">
-
         <!-- Remplace "J" par ton logo si disponible -->
-        <div class="logo">J</div>
-
+        <div class="logo">
+            <img src='./logo.jpg' alt='' width='' height=''>   
+        </div>
         <h1>JiroLink</h1>
-
         <p>
             Téléchargez l'application JiroLink pour accéder à la plateforme
             de gestion et de suivi des compteurs électriques prépayés.
         </p>
-
         <div class="features">
             <div class="feature">⚡ Gestion des compteurs</div>
             <div class="feature">📊 Suivi de consommation</div>
             <div class="feature">💳 Gestion des crédits</div>
             <div class="feature">🔔 Notifications</div>
         </div>
-
     </div>
-
     <div class="cards">
-
         <div class="card">
             <div class="icon">💻</div>
 
